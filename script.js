@@ -295,7 +295,7 @@ onload = function()
 	// 関節 1
         a_wMatrix[1][0], a_wMatrix[1][1], a_wMatrix[1][2], a_wMatrix[1][3],
         a_wMatrix[1][4],a_wMatrix[1][5], a_wMatrix[1][6], a_wMatrix[1][7],
-        a_wMatrix[1][8], a_wMatrix[1][9], a_wMatrix[1][10], a_wMatrix[1][11],
+        a_wMatrix[1][8], a_wMatrix[1][9], a_wMatrix[0][10], a_wMatrix[1][11],
         a_wMatrix[1][12], a_wMatrix[1][13], a_wMatrix[1][14], a_wMatrix[0][15],
       ]), gl.DYNAMIC_DRAW);
       gl.bindBuffer(gl.UNIFORM_BUFFER, null);
