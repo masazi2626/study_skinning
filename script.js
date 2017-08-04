@@ -293,11 +293,11 @@ onload = function()
         a_wMatrix[0][8], a_wMatrix[0][9], a_wMatrix[0][10], a_wMatrix[0][11],
         a_wMatrix[0][12], a_wMatrix[0][13], a_wMatrix[0][14], a_wMatrix[0][15],
 	// 関節 1
-        a_wMatrix[0][0], a_wMatrix[0][1], a_wMatrix[0][2], a_wMatrix[0][3],
-        a_wMatrix[0][4], a_wMatrix[0][5], a_wMatrix[0][6], a_wMatrix[0][7],
-        a_wMatrix[0][8], a_wMatrix[0][9], a_wMatrix[0][10], a_wMatrix[0][11],
-        a_wMatrix[0][12], a_wMatrix[0][13], a_wMatrix[0][14], a_wMatrix[0][15],
-      ])*angle, gl.DYNAMIC_DRAW);
+        1, 0, 0, 0,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        a_wMatrix[0][12], a_wMatrix[0][13], 0, a_wMatrix[0][15],
+      ]), gl.DYNAMIC_DRAW);
       gl.bindBuffer(gl.UNIFORM_BUFFER, null);
 
       gl.bindBuffer(gl.ARRAY_BUFFER, mesh_vbo);
